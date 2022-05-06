@@ -1,0 +1,31 @@
+.pessoa__imagem{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.pessoa__imagem--Nicolas{
+    background: url('../img/Nicolas.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pessoa__imagem--Pedro{
+    background: url('../img/pedro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pessoa__imagem--Otavio{
+    background: url('../img/otávio.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pessoa__imagem--Iasmin{
+    background: url('../img/Iasmin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

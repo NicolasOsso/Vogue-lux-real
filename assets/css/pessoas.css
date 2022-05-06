@@ -1,0 +1,31 @@
+.pessoas__titulo{
+    text-align: center;
+    color: rgb(214, 213, 213);
+}
+
+.pessoas {
+    display: grid;
+    padding-top: 3rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 16px;
+    margin-top: 20px;
+}
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pessoa__nome{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: rgb(230, 230, 230);
+}
+
+@media(max-width: 792px){
+    .pessoas{
+        gap: 50px;
+    }
+}

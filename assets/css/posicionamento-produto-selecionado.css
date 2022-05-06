@@ -1,0 +1,24 @@
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+}
+
+
+.produto-selecionado{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+
+.detalhes-produto{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+@media(max-width: 820px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+}

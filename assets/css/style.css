@@ -1,0 +1,141 @@
+body{
+    color: #FFFFFF;
+}
+
+
+.conteudo{
+    display: grid;
+    font-family: 'Hind Siliguri', sans-serif;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: auto 1fr auto auto;
+    padding: 10rem 2rem 1rem 2rem;
+    grid-gap: 2rem;
+}
+
+.pessoas-com-titulo{
+    grid-column: 1 / 3;
+    grid-row: 4 / 4;
+    margin-top: 100px;
+}
+
+
+
+
+.titulo-conteudo{
+    text-align: center;
+}
+
+.MaisComprados{
+    grid-area: maisComprados;
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    background-color: #2C343A;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.anuncios{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.cartao__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media(max-width: 840px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        align-items: center;
+    }
+
+    
+
+    .MaisComprados{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+}
+
+@media(max-width: 768px){
+
+    .conteudo{
+        padding: 10rem 1rem 1rem 1rem;
+        margin: 0 2rem;
+    }
+
+}
+
+@media(max-width: 430px){
+    .conteudo{
+        margin: 0 .5rem;
+    }
+}
+
+
+.cartao{
+    display: grid;
+    grid-template-areas: 
+    "tituloFalta"
+    "cartaoItem";
+    color: #FFFFFF;
+}
+.cartao__item{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.cartao__link:hover{
+    text-decoration: underline;
+}
+
+/* grid-areas */
+    .cartao__titulo{
+        grid-area: tituloFalta;
+    }
+
+    .cartao__item{
+        grid-area: cartaoItem;
+    }
+
+    .cartao__item-thumbnail{
+        grid-row: 1 / 1;
+        grid-column: 1 / 2;
+    }
+    .cartao__item-titulo{
+        grid-row: 1 / 1;
+        grid-column: 2 / 2;
+    }
+
+
+/* fim da grid-areas */
+
+.cartao__item-titulo{
+    margin-left: 10px;
+    font-weight: 560;
+}
+
+.cartao__item{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+
+.cartao__item-thumbnail{
+    width: 50px;
+    object-fit: cover;
+}

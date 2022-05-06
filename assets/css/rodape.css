@@ -1,0 +1,45 @@
+/* RODAPÉ */
+
+.rodape{
+    background-color: #282d32;
+    padding: 40px;
+}
+
+.footer{
+    margin: 40px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__img{
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.fa {
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 100%;
+    border: 1px solid grey;
+    color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Copiright */
+
+.copiright{
+    color: grey;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* fim do rodapé */

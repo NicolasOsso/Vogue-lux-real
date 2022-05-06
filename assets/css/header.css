@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.cabecalho{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: #FFFFFF;
+    padding: 20px 5px;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container{
+	justify-content: space-between;
+	align-items: center;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu__li{
+    list-style: none;
+    padding: 20px 0;
+}
+
+.menu__link{
+    color: white;
+    text-decoration: none;
+    padding: 17px;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+.menu__link:hover{
+    cursor: pointer;
+	opacity: 0.8;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.botao-menu{
+    background: #050f1b;
+	padding: 10px 15px;
+	border: none;
+	color: white;
+	font-size: 36px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: none;
+	transition: 0.2s all;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width: 840px){
+    .cabecalho{ 
+        padding: 0;
+        background: transparent;
+    }
+
+    
+
+    .botao-menu{
+        display: flex;
+    }
+
+    .menu{
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+    }
+
+    .titulo-principal{
+        padding-top: 20px;
+    }
+
+    .container, .menu{
+        flex-direction: column;
+    }
+
+    .menu{
+		text-align: center;
+		margin: 0 auto;
+		margin-top: -150vh;
+		transition: 0.5s all;
+	}
+
+
+	.menu--ativo{
+        display: flex;
+        transition: 0.5s all;
+		margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+	}
+    .cabecalho--preto{
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
